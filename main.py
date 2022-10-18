@@ -3,7 +3,9 @@ import cv2
 import copy
 import math
 
-# for naming
+#This is program will give you grayscale image as output
+
+# for naming output window
 names = {
     'a': "Arithmetic mean filter",
     'b': "Geometric mean filter",
@@ -15,6 +17,7 @@ names = {
 
 #reading original image and storing in image varibale
 image = cv2.imread("imageOG.tif")
+#replace imageOG.tif with your img url
 
 #creating a grayscale of original image and storing in OGimage varibale (Original-Grayscale Image)
 OGimage = cv2.cvtColor(image, cv2.COLOR_BGR2GRAY)
