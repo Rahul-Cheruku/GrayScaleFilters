@@ -4,6 +4,7 @@ import copy
 import math
 
 #This is program will give you grayscale image as output
+#You can give input as rbg image too
 
 # for naming output window
 names = {
