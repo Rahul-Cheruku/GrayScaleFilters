@@ -4,6 +4,7 @@
 As shown in the figure we see and mask of scale 3x3, this mask is moved over the image and operation is performed on pixel replacing it’s intensity with new one according to the given algorithm.
 
 <br>
+<hr>
 
 Let’s understand some of the few important filters:
 
@@ -19,13 +20,13 @@ We take these pixel intensity and replace the center pixel intensity with final 
 	Eg. For scale = 3,
 	k = {-1, 0, 1} 		j = {-1, 0, 1} 
 	Arithmetic mean filter is commonly used for noise reduction.
-
+<hr>
 For Geometric mean,
 
 ![image](https://user-images.githubusercontent.com/77064752/197389033-abc72f38-9dac-4749-9782-60e790077da9.png)
 
 The geometric mean filter is most widely used to filter out Gaussian noise.
-
+<hr>
 For median filter,
 	
 Step 1: Arrange all intensities of mask in ascending or descending order.
@@ -35,17 +36,17 @@ Step2:  Let n = total no of intensities in mask
 
 
 It is very effective at removing impulse noise, the “pepper and salt” noise, in an image. The principle of the median filter is to replace the gray level of each pixel by the median of the gray levels in a neighborhood of the pixels, instead of using the average operation.
-
+<hr>
 For Max filter,
 
 ![image](https://user-images.githubusercontent.com/77064752/197389062-4ee4bb6e-3b49-4566-b3cf-c1e7536e1f25.png)
 MaxFilter is a nonlinear filter commonly used to locally smooth data and diminish pepper-like noise, where the amount of smoothing is dependent on the value of r. The function applied to each range-r neighborhood is Max.
-
+<hr>
 For Min filter,
 
 ![image](https://user-images.githubusercontent.com/77064752/197389068-f6c7755c-136f-43f2-b7f1-13828230ac96.png)
 MinFilter is a nonlinear filter commonly used to locally smooth data and diminish salt-like noise, where the amount of smoothing is dependent on the value of r. The function applied to each range-r neighborhood is Min. 
-
+<hr>
 For Midpoint filter,
 The midpoint filter is typically used to filter images containing short tailed noise such as Gaussian and uniform type noises. The midpoint filter is defined as : where the coordinate (x+i, y+j ) is defined over the image A and the coordinate (i, j) is defined over the N x N size square mask.
 
