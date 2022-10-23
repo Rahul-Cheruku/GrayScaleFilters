@@ -3,6 +3,7 @@
 
 As shown in the figure we see and mask of scale 3x3, this mask is moved over the image and operation is performed on pixel replacing it’s intensity with new one according to the given algorithm.
 
+<br>
 
 Let’s understand some of the few important filters:
 
